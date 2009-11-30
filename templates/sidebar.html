@@ -1,0 +1,37 @@
+    <div id="sidebar">
+     <div class="alien">
+      <h2 class="gray">reddit this site:</h2>
+      <script>reddit_url='http://redditmedia.com'</script>
+      <script>reddit_title="reddit media: intelligent fun online"</script>
+      <script language="javascript" src="http://reddit.com/button.js?t=3"></script>
+     </div>
+     <div class="top-users">
+       <h2 class="gray">top ten posters</h2>
+       [% BLOCK b_user %]
+        <li><a href="http://reddit.com/user/[% user.user %]" class="darkblue">[% user.user %]</a> ([% user.total_posts %])</a></li>
+       [% END %]
+      <ul>
+       [% IF topusers_tpl %]
+           [% # URGH, this is ugly and wrong but I couldn't figure out how to include string literals in the template %]
+           [% tmp = "\[\% BLOCK b_user \%\]<li><a href=\"http://reddit.com/user/\[\% user.user \%\]\" class=\"darkblue\">\[\% user.user \%\]</a> (\[\% user.total_posts \%\])</a></li>\[\% END \%\]\[\% INCLUDE b_user FOREACH user = topusers \%\]" %]
+           [% tmp %]
+       [% ELSE %]
+        [% INCLUDE b_user FOREACH user = topusers %]
+       [% END %]
+      </ul>
+     </div>
+     <div class="top-hosts">
+       <h2 class="gray">top ten hosts</h2>
+       [% BLOCK b_host %]
+        <li><a href="http://[% host.host %]" class="darkblue">[% host.host %]</a> ([% host.total_posts %])</li>
+       [% END %]
+      <ul>
+       [% IF tophosts_tpl %]
+        [% tmp = "\[\% BLOCK b_host \%\]<li><a href=\"http://\[\% host.host \%\]\" class=\"darkblue\">\[\% host.host \%\]</a> (\[\% host.total_posts \%\])</li>\[\% END \%\]\[\% INCLUDE b_host FOREACH host = tophosts \%\]" %]
+        [% tmp %]
+       [% ELSE %]
+        [% INCLUDE b_host FOREACH host = tophosts %]
+       [% END %]
+      </ul>
+     </div>
+    </div>

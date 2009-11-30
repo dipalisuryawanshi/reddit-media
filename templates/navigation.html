@@ -1,0 +1,5 @@
+[% BLOCK b_nav %]
+ <li><a title="Goto page [% nav.page %]" href="[% nav.href %]" [% IF nav.current == nav.page %] class="current" [% END %]>[% nav.page %]</a></li>
+[% END %]
+
+[% INCLUDE b_nav FOREACH nav = navs %]

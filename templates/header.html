@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>reddit media: intelligent fun online[% IF title %] - [% title %] [% END %]</title>
+<link rel="stylesheet" href="/style.css" type="text/css" />
+
+<link rel="shortcut icon" href="/favicon.ico" />
+
+[% IF title %]
+<meta name="description" content="reddit media - [% title %]" />
+[% ELSE %]
+<meta name="description" content="reddit media website, fresh multimedia content from reddit - pictures, photos, drawings, charts, videos and clips!" />
+[% END %]
+
+<meta name="keywords" content="reddit, media, multimedia, pics, pictures, photos, drawings, charts, vids, videos, clips, xkcd, flickr, youtube" />
+
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/redditmedia" />
+
+<meta name="verify-v1" content="foo" />
+</head>
+
+<body>
+    <div id="header">
+     <div id="menu">
+      <div class="left">
+       <ul>
+        <li><a href="/index.html" title="all reddit multimedia" [% IF page_type == "main" %] class="current" [% END %]>all</a></li>
+        <li><a href="/index-pictures.html" title="all reddit pictures" [% IF page_type == "pictures" %] class="current" [% END %]>pictures</a></li>
+        <li><a href="/index-videos.html" title="all reddit videos" [% IF page_type == "videos" %] class="current" [% END %]>videos</a></li>
+        <li class="spacer"></li>
+        <li class="feed"><a href="http://feeds.feedburner.com/redditmedia" title="reddit media feed"> subscribe</a></li>
+        <li class="delicious"><a href="http://del.icio.us/post?url=http%3A%2F%2Fredditmedia.com&title=reddit+media%3A+intelligent+fun+online" title="add reddit media to del.icio.us">bookmark this site</a></li>
+       </ul>
+      </div>
+      <div class="right">
+       <ul class="catonmat">
+        <li><a href="http://www.catonmat.net" title="good coders code, great reuse">catonmat</a></li>
+       </ul>
+      </div>
+      <div class="clear-both"></div>
+     </div>
+    </div>
+

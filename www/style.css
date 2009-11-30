@@ -1,0 +1,206 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+
+body {
+	font: 62.5%/1.5  Verdana, "Lucida Grande", "Trebuchet MS", Tahoma, sans-serif;
+}
+
+a img {
+	border: none;
+	vertical-align: middle;
+}
+
+#header {
+	background: url(logo.gif) no-repeat;
+	height: 4em;
+}
+
+#menu {
+	margin-left: 130px;
+	height: 4em;
+	background-color: #C6DEF7;
+}
+
+#menu ul {
+	list-style-type: none;
+	padding-top: 1.8em;
+	padding-left: 1em;
+}
+
+#menu li {
+	display: inline;
+	padding-right: 10px;
+}
+
+#menu li a {
+	text-decoration: none;
+	font-size: 1.5em;
+	color: #000;
+	margin-top: 30px;
+	padding: 5px 5px 2px 5px;
+}
+
+#menu li.spacer {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#menu li.feed {
+	padding-left: 1em;
+	background: url(icons/feed.gif) no-repeat;
+	background-position: left;
+}
+
+#menu li.delicious {
+	padding-left: 1em;
+	background: url(icons/delicious.gif) no-repeat;
+	background-position: left;
+}
+
+#menu ul li a:hover {
+	background-color: #336699;
+	color: #FFF;
+}
+
+#menu ul.catonmat {
+	background: url(catonmat.gif) no-repeat;
+	background-position: 0.5em 2.2em;
+	padding-left: 2em;
+}
+
+#menu ul li a.current {
+	background-color: #336699;
+	color: #FFF;
+}
+
+#container {
+	width: 100%;
+	float: left;
+	margin-right: -200px;
+}
+
+#content {
+	margin-right: 200px;
+	margin-top: 30px;
+	font-size: 1.4em;
+}
+
+#sidebar {
+	float: right;
+	width: 178px;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+
+#sidebar h2 {
+	text-decoration: underline;
+	margin-bottom: 0.5em;
+}
+
+#sidebar div.alien, #sidebar div.top-users, #sidebar div.top-hosts,
+#sidebar div.digg {
+	margin-bottom: 1.5em;
+	margin-left: 10px;
+}
+
+#sidebar ul {
+	list-style-type: none;
+}
+
+#sidebar ul li {
+	margin-bottom: 0.2em;
+}
+
+.entry {
+	padding-bottom: 0.5em;
+}
+
+.entry a {
+	text-decoration: none;
+}
+
+.darkblue {
+	color: #336699;
+}
+
+#footer {
+	background-color: #C6DEF7;
+	text-align: center;
+	height: 8em;
+	width: 100%;
+	padding-top: 1.4em;
+	position: relative;
+}
+
+#footer #alien {
+	position:absolute;
+	left: 51px;
+	background-color: #fff;
+	top: 1em;
+}
+
+#navigation {
+	margin-left: 51px;
+	background-color: #0B55AC;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+#navigation ul {
+	padding-left: 10px;
+	list-style-type: none;
+	padding-bottom: 2px;
+	width: 80%;
+}
+
+#navigation li {
+	padding-right: 1em;
+	display: inline;
+}
+
+#navigation li a {
+	color: #FFF
+}
+
+#navigation li a.current {
+	text-decoration: none;
+}
+
+.gray {
+	color: #808080;
+}
+
+.grayer {
+	color: #5B5B5B;
+}
+
+.pos {
+	font-size: 0.9em;
+}
+
+.small {
+	font-size: 0.8em;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear-both {
+	clear: both;
+}
+
+.clear-left {
+	clear: left;
+}
+
+.clear-right {
+	clear: right;
+}

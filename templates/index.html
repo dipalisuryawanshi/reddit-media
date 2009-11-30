@@ -1,0 +1,15 @@
+[% INCLUDE header.html %]
+    <div id="container">
+     <div id="content">
+       [% INCLUDE $entry.file FOREACH entry = entries %]
+     </div>
+    </div>
+[% INCLUDE sidebar.html %]
+    <div class="clear-both"></div>
+
+    <div id="navigation">
+     <ul>
+      [% navigation %]
+     </ul>
+    </div>
+[% INCLUDE footer.html %]

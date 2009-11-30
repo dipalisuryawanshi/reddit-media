@@ -1,0 +1,18 @@
+     <div class="entry">
+      <table width="95%" border="0" cellpadding="0" cellspacing="0">
+       <tr>
+        <td width="47" align="center"></td>
+        <td width="60" height="79" align="center">
+         <iframe src="http://reddit.com/button?t=2&url=[% entry.url_uri_esc %]&title=[% entry.title_uri_esc %]" height="79" width="52" scrolling="no" frameborder="0" style="vertical-align: middle">
+         </iframe>
+        </td>
+        <td width="100" height="79" align="center"><img src="[% entry.icon %]" style="vertical-align: middle" width="79" height="79"></td>
+        <td>
+         <p><a href="[% entry.url %]" title="See '[% entry.title %]'">[% entry.title %]</a> <span class="gray small">([% entry.host %])</span></p>
+         <p class="gray small" style="margin-top: 0.5em">
+             posted by <a href="http://reddit.com/user/[% entry.user %]" class="darkblue">[% entry.user %]</a>. appeared on reddit on <span class="grayer">[% entry.date_added %]</span>. <a href="http://reddit.com/info/[% entry.reddit_id %]/comments" class="darkblue">read comments</a>. 
+         </p>
+        </td>
+       </tr>
+      </table>
+     </div>
