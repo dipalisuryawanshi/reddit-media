@@ -1,5 +1,5 @@
 This is the redditmedia.com website that I created back in 2007. It was pretty
-popular among redditors, until reddit got pics and videos subreddit.
+popular among redditors, until reddit got pics and videos subreddits.
 
 You can see how it looked like at http://reddit.picurls.com
 
